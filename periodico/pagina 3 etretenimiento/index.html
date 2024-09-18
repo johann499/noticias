@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entretenimiento - Periódico Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sección de Entretenimiento</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="deportes.html">Deportes</a></li>
+                <li><a href="entretenimiento.html">Entretenimiento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="articles">
+            <article onclick="openModal('Título del Artículo de Entretenimiento 1', 'Contenido completo del artículo de entretenimiento 1.')">
+                <img src="https://via.placeholder.com/600x400" alt="Artículo de Entretenimiento 1">
+                <h2>Título del Artículo de Entretenimiento 1</h2>
+                <p>Resumen del artículo de entretenimiento 1.</p>
+            </article>
+            <article onclick="openModal('Título del Artículo de Entretenimiento 2', 'Contenido completo del artículo de entretenimiento 2.')">
+                <img src="https://via.placeholder.com/600x400" alt="Artículo de Entretenimiento 2">
+                <h2>Título del Artículo de Entretenimiento 2</h2>
+                <p>Resumen del artículo de entretenimiento 2.</p>
+            </article>
+            <article onclick="openModal('Título del Artículo de Entretenimiento 3', 'Contenido completo del artículo de entretenimiento 3.')">
+                <img src="https://via.placeholder.com/600x400" alt="Artículo de Entretenimiento 3">
+                <h2>Título del Artículo de Entretenimiento 3</h2>
+                <p>Resumen del artículo de entretenimiento 3.</p>
+            </article>
+        </section>
+    </main>
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="closeBtn" onclick="closeModal()">×</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalContent"></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Periódico Digital</p>
+    </footer>
+    
+    <script src="javaescrip.js"></script>
+</body>
+</html>
